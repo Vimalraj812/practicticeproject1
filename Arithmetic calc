@@ -1,0 +1,55 @@
+package practiceproject;
+
+import java.util.Scanner;
+
+public class ArithmeticCalc {
+
+	public static void main(String[] args) {
+		
+while(true)
+		 {
+		        Scanner sc = new Scanner(System.in);
+		        double num1, num2, result;
+		        char operator;
+//getting 1st value from user
+		        System.out.print("Enter 1st value: ");
+		        num1 = sc.nextDouble();
+//getting operator from user
+		        System.out.print("select an operator (+, -, *, /): ");
+		        operator = sc.next().charAt(0);
+//getting 2nd value from user
+		        System.out.print("Enter 2nd value: ");
+		        num2 = sc.nextDouble();
+
+		        switch (operator) {
+		        //Add    
+		        case '+':
+		                result = num1 + num2;
+		                System.out.println("Result: " + result);
+		                break;
+		        //Subtraction    
+		        case '-':
+		                result = num1 - num2;
+		                System.out.println("Result: " + result);
+		                break;
+		        //multiplication    
+		        case '*':
+		                result = num1 * num2;
+		                System.out.println("Result: " + result);
+		                break;
+		        //division    
+		        case '/':		               
+		                   result = num1 / num2;
+		                    System.out.println("Result: " + result);		               	                                 
+		                break;
+		         //error statement    
+		            default:
+		                System.out.println("you entered a wrong simple ");
+		        }
+		        
+		    }
+		}
+
+	}
+
+
